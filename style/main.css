@@ -42,7 +42,8 @@ header nav a:hover {
 /* Main Title */
 .main-title {
     font-size: 16px;
-    background: /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%)*/ url('/img/the-greatest-showman-backdrop.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+        url('/img/the-greatest-showman-backdrop.jpg');
     height: 400px;
     background-size: cover;
     display: flex;
