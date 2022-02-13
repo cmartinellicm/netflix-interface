@@ -1,6 +1,9 @@
 :root {
-    --primaryColor: #141414;
-    --secondaryColor: #e50914;
+    /* Color Palette */
+    --primaryGray: #323232;
+    --secondaryGray: #dcd8d9;
+    --primaryPink: #eeb8b9;
+    --secondaryPink: #ffe3e3;
 }
 
 * {
@@ -10,9 +13,9 @@
 }
 
 body {
-    background: var(--primaryColor);
+    background: var(--primaryGray);
     font-family: Arial, Times, serif;
-    color: #fff;
+    color: var(--secondaryPink);
 }
 
 header .container {
@@ -24,14 +27,14 @@ header .container {
 
 header .logo {
     margin-left: 5px;
-    color: var(--secondaryColor);
+    color: var(--primaryPink);
     font-family: 'Arial Black', Times;
     font-size: 40px;
 }
 
 header nav a {
     text-decoration: none;
-    color: #aaa;
+    color: var(--secondaryGray);
     margin-right: 10px;
 }
 
@@ -44,17 +47,12 @@ header nav a:hover {
     font-size: 16px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
         url('/img/the-greatest-showman-backdrop.jpg');
-    height: 400px;
+    height: 450px;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-}
-
-.main-title .description {
-    margin-top: 10px;
-    margin-bottom: 40px;
 }
 
 .main-title .title {
@@ -64,10 +62,15 @@ header nav a:hover {
         'Lucida Sans', Arial, sans-serif;
 }
 
+.main-title .description {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
 .button {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.55);
     border: none;
-    color: #fff;
+    color: var(--primaryPink);
     padding: 15px 30px;
     margin-right: 15px;
     font-size: 12px;
@@ -76,8 +79,8 @@ header nav a:hover {
 }
 
 .button:hover {
-    background-color: #fff;
-    color: black;
+    background-color: var(--primaryPink);
+    color: var(--primaryGray);
 }
 
 .button i {
